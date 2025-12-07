@@ -1,0 +1,81 @@
+/* -----------------------------
+   GLOBAL RESET & BASE STYLES
+------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f1c21;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Scrollbar styling (optional) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1c2a30;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #375a66;
+  border-radius: 4px;
+}
+
+
+
+/* Optional: modal box frosted effect */
+/* .moodal {
+  background-color: rgba(28, 42, 48, 0.75);
+  transparent box backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: white;
+} */
+
+/* Close button visible on dark themes */
+.btn-close {
+  filter: brightness(0) invert(1);
+}
+
+/* -----------------------------
+   INPUTS & BUTTONS (GLOBAL)
+------------------------------*/
+input,
+textarea {
+
+  color: rgb(255, 255, 255) !important;
+
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #7da4b1 !important;
+}
+
+/* Remove focus blue outline for better UI */
+input:focus,
+textarea:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #1e88e5 !important;
+}
+
+/* -----------------------------
+   FLEX HELPERS
+------------------------------*/
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
